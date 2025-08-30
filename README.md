@@ -22,18 +22,17 @@ You can view the project here:
 ---
 
 #### 🛠 How to Run Locally
+1) Clone the repository:
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/project-name.git
 ```
-Open the index.html file in your browser.
+
+2) Open the index.html file in your browser.
 (No additional setup required — it’s plain HTML/CSS/JS)
 
-📂 Project Structure
-pgsql
-Copy
-Edit
+#### 📂 Project Structure
+```css
 project-name/
 │── index.html
 │── styles/
@@ -41,6 +40,7 @@ project-name/
 │── scripts/
 │   └── script.js
 │── images/
-📜 License
+```
 
+#### 📜 License
 This project is licensed under the [MIT License](./LICENSE).
