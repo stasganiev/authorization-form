@@ -25,69 +25,94 @@
     <h1 class="visually-hidden">Stas Ganiev portfolio: authorization form</h1>
   </header>
 
-  <main class="main">
+  <main class="main container-fluid">
 
-    <div class="left-side">
-      <img src="./img/Logo/logo-head-desktop-x2.png" alt="logo" width="99" height="33">
-      <p class="copywrite text">image by GPT-5</p>
-    </div>
+    <div class="space">
 
-    <div class="right-side">
-
-      <div class="aria-wrap">
-        <p class="description text">
-          This is not a real online service! You know you need something like this in your life ti help you realize your deepest dreams. Sign up now to get started.
-        </p>
-        <p class="description text">
-          You <i>know</i> you want to.
-        </p>
+      <div class="space_left-side">
+        <picture>
+          <!-- <source
+            srcset="img/logo/logo-head-desktop-x2.png 480w, images/photo-tablet.avif 768w, images/photo-desktop.avif 1440w"
+            type="image/avif"> -->
+          <source
+            srcset="img/logo/logo-head-mobile-x2.webp 480w, img/logo/logo-head-tablet-x2.webp 768w, img/logo/logo-head-desktop-x2.webp 1440w"
+            type="image/webp">
+          <source
+            srcset="img/logo/logo-head-mobile-x2.png 480w, img/logo/logo-head-tablet-x2.png 768w, img/logo/logo-head-desktop-x2.png 1440w"
+            type="image/png">
+          <img
+            class="logo-img"
+            src="img/logo/logo-head-desktop-x2.png"
+            alt="logo"
+            sizes="(max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  1440px"
+            width="150" height="100"
+            loading="lazy"
+            decoding="async">
+        </picture>
+        <!-- <img src="./img/Logo/logo-head-desktop-x2.png" alt="logo" width="99" height="33"> -->
+        <p class="copywrite text">image by GPT-5</p>
       </div>
 
-      <div class="aria-wrap">
+      <div class="space_right-side">
 
-        <form action="post.ganiev.pro" class="main-form" method="post">
-          <div class="main-form_space">
-            <h2 class="main-form-header">Let's do this</h2>
-            <div class="main-form_group fieldset">
-              <div class="input-wrap">
-                <label class="input-label" for="firstname_id">First name</label>
-                <input class="input" type="text" id="firstname_id" name="firstname" placeholder="ex: John">
+        <div class="aria-wrap">
+          <p class="description text">
+            This is not a real online service! You know you need something like this in your life ti help you realize your deepest dreams. Sign up now to get started.
+          </p>
+          <p class="description text">
+            You <i>know</i> you want to.
+          </p>
+        </div>
+
+        <div class="aria-wrap">
+
+          <form action="post.ganiev.pro" class="main-form" method="post">
+            <div class="main-form_space">
+              <h2 class="main-form-header">Let's do this</h2>
+              <div class="main-form_group fieldset">
+                <div class="input-wrap">
+                  <label class="input-label" for="firstname_id">First name</label>
+                  <input class="input" type="text" id="firstname_id" name="firstname" placeholder="ex: John">
+                </div>
+                <div class="input-wrap">
+                  <label class="input-label" for="lastname_id">Last name</label>
+                  <input class="input" type="text" id="lastname_id" name="lastname" placeholder="ex: Smith">
+                </div>
               </div>
-              <div class="input-wrap">
-                <label class="input-label" for="lastname_id">Last name</label>
-                <input class="input" type="text" id="lastname_id" name="lastname" placeholder="ex: Smith">
+              <div class="main-form_group fieldset">
+                <div class="input-wrap">
+                  <label class="input-label" for="email_id">E-mail</label>
+                  <input class="input" type="text" id="email_id" name="email" placeholder="ex: john@gmail.com">
+                </div>
+                <div class="input-wrap">
+                  <label class="input-label" for="phone_id">Phone number</label>
+                  <input class="input" type="text" id="phone_id" name="phone" placeholder="ex: +1333555777">
+                </div>
+              </div>
+              <div class="main-form_group fieldset">
+                <div class="input-wrap">
+                  <label class="input-label" for="password_id">Password</label>
+                  <input class="input" type="text" id="password_id" name="password">
+                </div>
+                <div class="input-wrap">
+                  <label class="input-label" for="password2_id">Confirm password</label>
+                  <input class="input" type="text" id="password2_id" name="password2">
+                </div>
               </div>
             </div>
-            <div class="main-form_group fieldset">
-              <div class="input-wrap">
-                <label class="input-label" for="email_id">E-mail</label>
-                <input class="input" type="text" id="email_id" name="email" placeholder="ex: john@gmail.com">
-              </div>
-              <div class="input-wrap">
-                <label class="input-label" for="phone_id">Phone number</label>
-                <input class="input" type="text" id="phone_id" name="phone" placeholder="ex: +1333555777">
-              </div>
-            </div>
-            <div class="main-form_group fieldset">
-              <div class="input-wrap">
-                <label class="input-label" for="password_id">Password</label>
-                <input class="input" type="text" id="password_id" name="password">
-              </div>
-              <div class="input-wrap">
-                <label class="input-label" for="password2_id">Confirm password</label>
-                <input class="input" type="text" id="password2_id" name="password2">
-              </div>
-            </div>
-          </div>
-          <button class="btn btn_submit" type="submit" alt="Create Account">
-            Create Account
-          </button>
+            <button class="btn btn_submit" type="submit" alt="Create Account">
+              Create Account
+            </button>
 
-        </form>
+          </form>
 
-        <p class="login-text text">
-          Already have an account? <a href="#" class="login-link">Log in</a>
-        </p>
+          <p class="login-text text">
+            Already have an account? <a href="#" class="login-link">Log in</a>
+          </p>
+        </div>
+
       </div>
 
     </div>

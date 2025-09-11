@@ -44,7 +44,7 @@
   --m-max: 1279.9px;
   --l-min: 1280px;
 
-  --s-padding: 20px;
+  --s-padding: 0;
   --m-padding: 30px;
   --l-padding: 130px;
 
@@ -158,20 +158,89 @@ button {
     width: 100%;
 }
 
-@media (max-width: var(--s-max)) {
+@media (max-width: 767.9px) {
     .container-fluid {
         padding: 0 var(--s-padding);
     }
 }
 
-@media (min-width: var(--m-min)) and (max-width: var(--m-max)) {
+@media (min-width: 768px) and (max-width: 1279.9px) {
     .container-fluid {
         padding: 0 var(--m-padding);
     }
 }
 
-@media (min-width: var(--l-min)) {
+@media (min-width: 1280px) {
     .container-fluid {
         padding: 0 var(--l-padding);
     }
+}
+
+/* Makro layout */
+
+@media (max-width: 767.9px) {
+
+  .space {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .space_left-side {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: url('../img/bcg/bgr.png');
+    background-position: center center;
+
+    z-index: 1;
+  }
+
+  .space_right-side {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  .logo-img {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1279.9px) {
+
+  .space {
+
+  }
+
+  .space_left-side {
+
+  }
+
+  .space_right-side {
+
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  .space {
+
+  }
+
+  .space_left-side {
+
+  }
+
+  .space_right-side {
+
+  }
+
 }
