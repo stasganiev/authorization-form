@@ -25,7 +25,7 @@
 
 :root {
   --min-viewport-width: 180px;
-  --min-viewport-height: 320px;
+  --min-viewport-height: 280px;
 
   --mn-font-family: 'Gilroy Medium', 'Candara', sans-serif;
   --mn-font-size: 16px;
@@ -33,9 +33,11 @@
   
   --txt-font-family: 'Nunito', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
   --txt-font-size: 14px;
+  --txt-font-size-mini: 11px;
   --txt-line-height: 1.25em;
   
   --mn-color1: #1f2937;
+  --mn-color2: #f9faf8;
   --mn-bg-color1: #f9faf8;
 
   /* layout */
@@ -176,13 +178,15 @@ button {
     }
 }
 
-/* Makro layout */
+/* Makro layout (spaces) */
 
 @media (max-width: 767.9px) {
 
   .space {
     width: 100vw;
     height: 100vh;
+
+    color: var(--mn-color2);
   }
 
   .space_left-side {
@@ -204,22 +208,22 @@ button {
     width: 100vw;
     height: 100vh;
     z-index: 2;
+
+    padding: 90px 20px 0 20px;
   }
 
   .logo-img {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 5px;
   }
 
-  .fieldset {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-items: center;
-  }
-
-  .input-wrap {
-
+  .copywrite {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: var(--txt-font-size-mini);
   }
 
 }
@@ -227,15 +231,25 @@ button {
 @media (min-width: 768px) and (max-width: 1279.9px) {
 
   .space {
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: stretch;
   }
 
   .space_left-side {
-
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: url('../img/bcg/bgr.png');
+    background-position: center center;
+    width: 35%;
   }
 
   .space_right-side {
-
+    width: 65%;
   }
 
 }
@@ -252,6 +266,19 @@ button {
 
   .space_right-side {
 
+  }
+
+}
+
+/* Items */
+
+@media (max-width: 767.9px) {
+
+  .fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
   }
 
 }
