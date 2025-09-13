@@ -209,12 +209,21 @@ button {
     height: 100vh;
     z-index: 2;
 
-    padding: 90px 20px 0 20px;
+    padding: 120px 20px 0 20px;
   }
 
   .logo-img {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+  }
+
+  .logo-wrap {
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: auto;
+    margin-top: 20px;
   }
 
   .copywrite {
@@ -240,16 +249,44 @@ button {
   }
 
   .space_left-side {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
     background-image: url('../img/bcg/bgr.png');
     background-position: center center;
     width: 35%;
+
+    color: var(--mn-color2);
   }
 
   .space_right-side {
     width: 65%;
+    padding: 30px;
+  }
+
+  .logo-wrap {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: auto;
+  }
+
+  .copywrite {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: var(--txt-font-size-mini);
+
+    width: 100%;
+    text-align: center;
   }
 
 }
