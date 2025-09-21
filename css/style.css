@@ -416,7 +416,7 @@ button {
 
 .input:active,
 input:focus {
-  border-width: 1px;
+  border-width: 2px;
   border-color: var(--input-border-active-color);
   outline: none;
   box-shadow: 1px 1px 10px 1px rgba(46, 24, 22, 0.3);
