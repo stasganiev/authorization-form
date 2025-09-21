@@ -278,6 +278,7 @@ button {
   .space_right-side {
     width: 65%;
     padding: 90px 0;
+    overflow-y: scroll;
   }
 
   .logo-wrap {
@@ -310,21 +311,74 @@ button {
 
 }
 
-/* @media (min-width: 1280px) {
+@media (min-width: 1280px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
 
   .space {
-
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: stretch;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 
   .space_left-side {
+    position: relative;
 
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: url('../img/bcg/bgr.png');
+    background-position: center center;
+    width: 35%;
+
+    color: var(--mn-color2);
   }
 
   .space_right-side {
-
+    width: 65%;
+    padding: 90px 0;
+    overflow-y: scroll;
   }
 
-} */
+  .logo-wrap {
+    position: absolute;
+    margin-top: 90px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 30px 15px;
+  }
+
+  .logo-img {
+    width: 120px;
+  }
+
+  .copywrite {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: var(--txt-font-size-mini);
+
+    width: 100%;
+    text-align: center;
+  }
+
+}
 
 /* Form items */
 
@@ -389,7 +443,7 @@ button {
 
 }
 
-@media (min-width: 768px) and (max-width: 1279.9px) {
+@media (min-width: 768px) {
 
   .aria-wrap {
     margin-bottom: 26px;
