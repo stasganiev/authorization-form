@@ -55,6 +55,8 @@
   --m-padding: 0;
   --l-padding: 130px;
 
+  --m-aria-padding: 30px;
+
   /* Adaptive pictures */
   --retina-dpi: 144dpi;
   --retina-dppx: 1.5dppx;
@@ -275,12 +277,12 @@ button {
 
   .space_right-side {
     width: 65%;
-    padding: 30px;
+    padding: 90px 0;
   }
 
   .logo-wrap {
     position: absolute;
-    margin-top: 140px;
+    margin-top: 90px;
     width: 100%;
 
     display: flex;
@@ -324,7 +326,7 @@ button {
 
 } */
 
-/* Items */
+/* Form items */
 
 .main-form_space,
 .main-form {
@@ -351,10 +353,6 @@ button {
   appearance: none;
   display: inline-block;
   padding: 9px 26px;
-
-  /* font-family: inherit;
-  font-size: inherit;
-  line-height: inherit; */
 
   color: var(--mn-color2);
   background-color: var(--color-accent04);
@@ -394,15 +392,31 @@ button {
 @media (min-width: 768px) and (max-width: 1279.9px) {
 
   .aria-wrap {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+  }
+
+  .aria-wrap-annotation {
+    padding: 0 var(--m-aria-padding);
+  }
+
+  .aria-wrap-formitems {
+    padding: 0;
   }
 
   .description {
       margin-bottom: 12px;
   }
 
+  .main-form_space {
+    padding: 30px var(--m-aria-padding);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+  }
+
   .main-form-header {
       margin-bottom: 16px;
+      font-size: 18px;
   }
 
   .fieldset {
@@ -414,6 +428,11 @@ button {
 
   .input-wrap {
     flex: 1;
+  }
+
+  .btn_submit,
+  .login-text {
+    margin: 0 var(--m-aria-padding);
   }
 
 }
