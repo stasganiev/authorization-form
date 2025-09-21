@@ -86,21 +86,21 @@
               <div class="main-form_group fieldset">
                 <div class="input-wrap">
                   <label class="input-label" for="email_id">E-mail</label>
-                  <input class="input" type="text" id="email_id" name="email" placeholder="ex: john@gmail.com">
+                  <input class="input" type="email" id="email_id" name="email" placeholder="ex: john@gmail.com">
                 </div>
                 <div class="input-wrap">
                   <label class="input-label" for="phone_id">Phone number</label>
-                  <input class="input" type="text" id="phone_id" name="phone" placeholder="ex: +1333555777">
+                  <input class="input" type="text" id="phone_id" name="phone" placeholder="ex: +1333555777" pattern="[+]?(\d{2,3}([\- ]?\d{2,4}){0,4})">
                 </div>
               </div>
               <div class="main-form_group fieldset">
                 <div class="input-wrap">
                   <label class="input-label" for="password_id">Password</label>
-                  <input class="input" type="text" id="password_id" name="password">
+                  <input class="input" type="password" id="password_id" name="password" minlength="8">
                 </div>
                 <div class="input-wrap">
                   <label class="input-label" for="password2_id">Confirm password</label>
-                  <input class="input" type="text" id="password2_id" name="password2">
+                  <input class="input" type="password" id="password2_id" name="password2" minlength="8">
                 </div>
               </div>
             </div>

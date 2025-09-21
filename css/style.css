@@ -37,6 +37,7 @@
   --txt-line-height: 1.25em;
   
   --mn-color1: #1f2937;
+  --mn-color1-light: rgba(31, 41, 55, 0.3);
   --mn-color2: #f9faf8;
   --mn-bg-color1: #f9faf8;
 
@@ -44,6 +45,10 @@
   --color-accent02: #e94d1f;
   --color-accent03: #2e1816;
   --color-accent04: #922413;
+
+  --input-border-color: #e5e7eb;
+  --input-border-invalid-color: #dd3333;
+  --input-border-active-color: #6c93e7;
 
   /* layout */
   --s-max: 767.9px;
@@ -400,7 +405,25 @@ button {
 
 .input {
   padding: 4px 8px;
+  border-width: 1px;
+  border-color: var(--input-border-color);
   border-radius: 6px;
+}
+
+.input::placeholder {
+  color: var(--mn-color1-light);
+}
+
+.input:active,
+input:focus {
+  border-width: 1px;
+  border-color: var(--input-border-active-color);
+  outline: none;
+  box-shadow: 1px 1px 10px 1px rgba(46, 24, 22, 0.3);
+}
+
+.input:invalid {
+  border-color: var(--input-border-invalid-color);
 }
 
 .btn_submit {
@@ -496,7 +519,7 @@ button {
 
   .btn_submit,
   .login-text {
-    margin: 0 var(--m-aria-padding);
+    margin: 8px var(--m-aria-padding);
   }
 
 }
